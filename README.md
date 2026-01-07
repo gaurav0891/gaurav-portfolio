@@ -25,28 +25,28 @@ A responsive, high-performance developer portfolio built with **React.js**, **Ta
 portfolio/
 ├── public/
 │ ├── favicon.ico
-│ └── resume.pdf      # Downloadable resume file
+│ └── resume.pdf     
 ├── src/
 │ ├── assets/
-│ │ ├── images/      # Project screenshots & profile picture
-│ │ └── icons/      # SVG icons (GitHub, LinkedIn, Email)
+│ │ ├── images/      
+│ │ └── icons/     
 │ ├── components/
-│ │ ├── Navbar.jsx      # Sticky navigation with smooth scroll links
-│ │ ├── Hero.jsx      # Intro banner, headline, CTA buttons
-│ │ ├── About.jsx      # Bio and academic background
-│ │ ├── Skills.jsx      # Categorized technical skill tags
-│ │ ├── Projects.jsx      # Grid container for project cards
-│ │ ├── ProjectCard.jsx      # Reusable card component (preview, tech, links)
-│ │ ├── Education.jsx      # Degree details, certifications, and achievements
-│ │ ├── Contact.jsx      # Contact form or mailto trigger with socials
-│ │ └── Footer.jsx      # Copyright and bottom links
+│ │ ├── Navbar.jsx      
+│ │ ├── Hero.jsx     
+│ │ ├── About.jsx      
+│ │ ├── Skills.jsx      
+│ │ ├── Projects.jsx     
+│ │ ├── ProjectCard.jsx      
+│ │ ├── Education.jsx      
+│ │ ├── Contact.jsx      
+│ │ └── Footer.jsx      
 │ ├── data/
-│ │ └── portfolioData.js      # Single source of truth for text, links, and projects
+│ │ └── portfolioData.js      
 │ ├── styles/
-│ │ ├── index.css      # Global resets, CSS variables (colors, fonts)
-│ │ └── App.css      # Layout containers and section spacing
-│ ├── App.jsx      # Main page assembly
-│ └── main.jsx      # React DOM entry point
+│ │ ├── index.css      
+│ │ └── App.css      
+│ ├── App.jsx     
+│ └── main.jsx      
 ├── .gitignore
 ├── index.html
 ├── package.json
