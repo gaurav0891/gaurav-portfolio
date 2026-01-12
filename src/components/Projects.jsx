@@ -1,16 +1,13 @@
 import { portfolioData } from '../data/portfolioData';
+import ProjectCard from './ProjectCard';
 
 export default function Projects() {
   return (
-    <section className="section">
-      <h2>Projects</h2>
-      <div className="grid">
+    <section id="projects" className="section section-shell">
+      <div className="section-heading projects-heading"><p className="eyebrow">03 / selected work</p><h2>Projects with a<br /><span>purpose.</span></h2><p>Some things I have designed and built recently.</p></div>
+      <div className="projects-grid">
         {portfolioData.projects.map((proj) => (
-          <div key={proj.title} className="card">
-            <h3>{proj.title}</h3>
-            <p className="tech-stack">{proj.tech}</p>
-            <p>{proj.description}</p>
-          </div>
+          <ProjectCard key={proj.title} project={proj} />
         ))}
       </div>
     </section>

@@ -1,10 +1,8 @@
-import './Navbar.css';
-
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <a href="#" className="nav-logo">GS</a>
+        <a href="#about" className="nav-logo"><span>G</span>S</a>
         <div className="nav-links">
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>

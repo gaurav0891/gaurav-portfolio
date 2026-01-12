@@ -2,34 +2,12 @@ import { portfolioData } from '../data/portfolioData';
 
 export default function Contact() {
   return (
-    <section id="contact" className="section">
-      <h2>Get In Touch</h2>
-      <p className="bio">
-        Open to software engineering roles and collaboration. Feel free to reach out directly.
-      </p>
-      <div className="contact-links" style={{ marginTop: '1.25rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-        <a 
-          href={`mailto:${portfolioData.email}`} 
-          className="btn-link"
-        >
-          Email: {portfolioData.email}
-        </a>
-        <a 
-          href="https://github.com/gaurav0891" 
-          target="_blank" 
-          rel="noreferrer"
-          className="btn-link"
-        >
-          GitHub
-        </a>
-        <a 
-          href="https://www.linkedin.com" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="btn-link"
-        >
-          LinkedIn
-        </a>
+    <section id="contact" className="section section-shell contact-section">
+      <p className="eyebrow">05 / let&apos;s talk</p><h2>Have a project<br /><span>in mind?</span></h2><p className="bio">Open to software engineering roles and collaboration. Feel free to reach out directly.</p>
+      <div className="contact-links">
+        <a href={`mailto:${portfolioData.email}`} className="button button-primary">{portfolioData.email} <span aria-hidden="true">-&gt;</span></a>
+        <a href={portfolioData.github} target="_blank" rel="noreferrer" className="social-link">GitHub <span aria-hidden="true">&#8599;</span></a>
+        <a href={portfolioData.linkedin} target="_blank" rel="noreferrer" className="social-link">LinkedIn <span aria-hidden="true">&#8599;</span></a>
       </div>
     </section>
   );
