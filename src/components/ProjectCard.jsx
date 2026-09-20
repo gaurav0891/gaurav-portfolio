@@ -8,8 +8,8 @@ export default function ProjectCard({ project }) {
         {project.tech.map((technology) => <span key={technology}>{technology}</span>)}
       </div>
       <div className="project-links">
-        <a href={project.demo} target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">&#8599;</span></a>
-        <a href={project.github} target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+        {project.demo && <a href={project.demo} target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">&#8599;</span></a>}
+        <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
       </div>
     </article>
   );

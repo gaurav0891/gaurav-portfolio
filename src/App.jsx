@@ -5,7 +5,7 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import './styles/App.css';
+import './App.css';
 
 export default function App() {
   return (

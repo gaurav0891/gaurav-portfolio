@@ -14,6 +14,9 @@ export default function Education() {
           <li key={c}>{c}</li>
         ))}
       </ul>
+      <ul className="cert-list"><li className="cert-label">Achievements</li>
+        {portfolioData.achievements.map((achievement) => <li key={achievement}>{achievement}</li>)}
+      </ul>
       </div>
     </section>
   );
