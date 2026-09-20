@@ -5,6 +5,7 @@ A responsive, high-performance developer portfolio built with **React.js**, **Ta
 ---
 
 ## 🚀 Live Demo
+github page link:  https://gaurav0891.github.io/gaurav-portfolio/ 
 * **Live Website:** [your-portfolio.vercel.app](https://your-portfolio.vercel.app)
 * **Deployment Platform:** Vercel / Netlify
 
