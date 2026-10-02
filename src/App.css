@@ -93,17 +93,36 @@ h2 { margin-bottom: 0; font-size: clamp(2.4rem, 5vw, 4.8rem); line-height: 0.98;
 .footer { display: flex; justify-content: space-between; padding-top: 25px; padding-bottom: 25px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.62rem; }
 .footer p { margin: 0; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 900px) {
+  .hero { min-height: auto; padding-top: 96px; padding-bottom: 96px; grid-template-columns: 1fr; gap: 48px; }
+  .hero-visual { min-height: 360px; }
+  .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .education-layout { gap: 48px; }
+}
 @media (max-width: 760px) {
   .section-shell, .nav-container { width: min(100% - 40px, 600px); }
   .nav-links { gap: 14px; }
-  .nav-links a:nth-child(1), .nav-links a:nth-child(3) { display: none; }
-  .hero { min-height: auto; padding-top: 80px; padding-bottom: 80px; grid-template-columns: 1fr; gap: 50px; }
+  .nav-links a { font-size: 0.66rem; }
   h1 { font-size: clamp(3.2rem, 15vw, 5rem); }
-  .hero-visual { min-height: 290px; }
+  .hero-visual { min-height: 300px; }
   .section { padding-top: 80px; padding-bottom: 80px; }
   .skills-block, .projects-grid, .education-layout { grid-template-columns: 1fr; }
   .project-card { min-height: 365px; }
-  .education-layout { gap: 45px; }
+  .education-layout { gap: 36px; }
   .footer { flex-direction: column; gap: 8px; }
+}
+@media (max-width: 420px) {
+  .section-shell, .nav-container { width: calc(100% - 32px); }
+  .navbar { padding-top: 16px; padding-bottom: 16px; }
+  .nav-logo { font-size: 1.1rem; }
+  .nav-links { gap: 9px; }
+  .nav-links a { font-size: 0.58rem; }
+  .hero { padding-top: 68px; padding-bottom: 68px; gap: 36px; }
+  .eyebrow { font-size: 0.58rem; line-height: 1.7; }
+  .hero-meta { gap: 12px; }
+  .hero-visual { min-height: 260px; }
+  .hero-code { top: 18px; right: 16px; font-size: 0.58rem; }
+  .hero-caption { bottom: 18px; left: 16px; font-size: 0.58rem; }
+  .project-card { padding: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: 0.01ms !important; } }
